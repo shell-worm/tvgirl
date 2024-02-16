@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://w.wallhaven.cc/full/z8/wallhaven-z86m1w.jpg'); /* Replace with the actual file path of your flower background */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#videoContainer {
+    margin-top: 20px;
+}
