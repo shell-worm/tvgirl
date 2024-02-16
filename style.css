@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://w.wallhaven.cc/full/z8/wallhaven-z86m1w.jpg'); /* Replace with the actual file path of your flower background */
+    background-image: url('https://wallpapercave.com/wp/wp13269541.jpg'); /* Replace with your actual background image URL */
     background-size: cover;
     font-family: 'Arial', sans-serif;
 }
@@ -9,18 +9,41 @@ body {
 .container {
     text-align: center;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.0); /* Set the alpha channel to 0 to make it transparent */
     border-radius: 10px;
     margin: 50px auto;
-    max-width: 400px;
+    max-width: 800px; /* Increased the max-width to accommodate the gifs */
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     cursor: pointer;
+    background-color: #ff69b4; /* Pink color, you can change it to your preferred color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e0458d; /* Lighter pink color on hover, you can change it */
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#leftGifContainer img,
+#rightGifContainer img {
+    width: 100px; /* Adjust the width as needed */
+    border-radius: 10px;
 }
 
 #videoContainer {
-    margin-top: 20px;
+    flex-grow: 1;
+    margin: 0 20px; /* Added some margin around the video container */
+    overflow: hidden; /* Hide any potential overflow */
 }
