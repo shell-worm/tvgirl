@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Song Website</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #likeButton, #chatButton {
+            margin-bottom: 10px;
+        }
+        #cboxIframe {
+            width: 300px; /* Adjust width as needed */
+            height: 400px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>dam dam Surpricessssss babe mwah</h1>
+        <button id="likeButton" title="Click here, babe">Click here, babe</button>
+        <button id="chatButton" onclick="openChat()">Click to Chat</button>
+        <div id="wrapper">
+            <div id="leftGifContainer">
+                <img src="https://media1.tenor.com/m/8hh03MbjiC0AAAAC/os-tv-girl-cats.gif" alt="Left Gif">
+            </div>
+            <div id="videoContainer"></div>
+            <div id="rightGifContainer">
+                <img src="https://media1.tenor.com/m/d4CBA9YY_l8AAAAC/tv-girl-tv-girl-cat.gif" alt="Right Gif">
+            </div>
+        </div>
+        <!-- Add the Cbox chat widget -->
+        <iframe id="cboxIframe" src="" frameborder="0" scrolling="auto"></iframe>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <script>
+        function openChat() {
+            document.getElementById("cboxIframe").src = "https://my.cbox.ws/myominkhant";
+        }
+    </script>
+</body>
+</html>
